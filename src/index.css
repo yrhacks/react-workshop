@@ -20,6 +20,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -39,9 +40,41 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient-blob {
+  background: -webkit-linear-gradient(
+    118.33deg,
+    #2563eb 3.84%,
+    #9333ea 52.51%,
+    #be123c 107.67%
+  );
+  filter: blur(5em);
+  position: absolute;
+  height: 100px;
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .gradient-blob {
+    width: 300px;
+  }
+}
+
+.blob-top {
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.blob-bottom {
+  bottom: -50px;
+}
+
 button {
   background-color: #222;
-  border: 2px solid #333;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5em;
   padding: 1em 2em;
   transition: all 0.2s ease-in-out;
@@ -51,6 +84,51 @@ button {
 }
 
 button:hover {
+  background-color: #333;
+  border-color: #444;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-icon {
+  margin-left: 0.5em;
+  color: #999;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #222;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-buttons {
+  display: flex;
+  gap: 0.5em;
+  margin: 0.5em 0;
+}
+
+.link-buttons a {
+  background-color: #222;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+  padding: 1em 2em;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.link-buttons a:hover {
   background-color: #333;
   border-color: #444;
   transition: all 0.2s ease-in-out;
@@ -78,6 +156,14 @@ button:hover {
   border-radius: 50%;
   background-color: #333;
   margin-bottom: 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.github-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .github-name {
@@ -103,12 +189,18 @@ button:hover {
   font-weight: 600;
   margin-top: 1em;
   padding: 0.3em 0.9em;
+  background-color: #222;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5em;
-  border: 1px solid #ccc;
   transition: all 0.2s ease-in-out;
 }
 
 .github-link:hover {
   opacity: 75%;
+  background-color: #333;
+  border-color: #444;
   transition: all 0.2s ease-in-out;
 }
