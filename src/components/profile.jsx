@@ -1,7 +1,6 @@
 export default function Profile(props) {
   return (
     <div className="github">
-      {/* <div>{JSON.stringify(props.data)}</div> */}
       <div className="github-avatar">
         <img src={props.data.avatar_url} alt="avatar" />
       </div>

@@ -20,10 +20,14 @@ function App() {
         React <span className="gradient-text">YRHacks</span> Workshop
       </h1>
       <div className="link-buttons">
-        <a href="https://beta.reactjs.org/">
+        <a target="_blank" rel="noreferrer" href="https://beta.reactjs.org/">
           React Docs <FaExternalLinkAlt className="button-icon" />
         </a>
-        <a href="https://yrhacks2023.notion.site/yrhacks2023/YRHacks-2023-2f2aae5945264974b9d8e182e5ec5a40">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://yrhacks2023.notion.site/yrhacks2023/YRHacks-2023-2f2aae5945264974b9d8e182e5ec5a40"
+        >
           YRHacks Notion <FaExternalLinkAlt className="button-icon" />
         </a>
       </div>
