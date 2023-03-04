@@ -52,7 +52,9 @@ function App() {
         <FaGithub className="button-icon" />
       </button>
 
-      {profile ? <Profile data={profile} /> : null}
+      {clicked ? (
+        <>{profile ? <Profile data={profile} /> : <div>loading...</div>}</>
+      ) : null}
     </div>
   );
 }
