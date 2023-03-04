@@ -7,7 +7,7 @@ export default function Profile(props) {
       <h2 className="github-name">{props.data.name}</h2>
       <div className="github-handle">@{props.data.login}</div>
       <div className="github-follow">
-        <div>{props.data.followers} Follower</div>-
+        <div>{props.data.followers} Followers</div>-
         <div>{props.data.following} Following</div>
       </div>
       <a
