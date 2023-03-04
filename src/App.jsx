@@ -26,9 +26,9 @@ function App() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://yrhacks2023.notion.site/yrhacks2023/YRHacks-2023-2f2aae5945264974b9d8e182e5ec5a40"
+          href="https://github.com/yrhacks/react-workshop"
         >
-          YRHacks Notion <FaExternalLinkAlt className="button-icon" />
+          This Website's Code <FaExternalLinkAlt className="button-icon" />
         </a>
       </div>
       <button
